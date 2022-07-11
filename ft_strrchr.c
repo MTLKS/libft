@@ -6,7 +6,7 @@
 /*   By: maliew <maliew@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 03:57:52 by maliew            #+#    #+#             */
-/*   Updated: 2022/07/09 04:02:25 by maliew           ###   ########.fr       */
+/*   Updated: 2022/07/12 01:02:41 by maliew           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ char	*ft_strrchr(const char *s, int c)
 		s++;
 		i++;
 	}
-	while (i > 0 && *s != c)
+	while (i > 0 && *s != (char)c)
 	{
 		s--;
 		i--;
 	}
-	if (*s == c)
+	if (*s == (char)c)
 		return ((char *)s);
 	return (0);
 }
